@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="NOINDEX,NOFOLLOW" />
+
+<title>タイトル</title>
+
+<meta name="viewport" content="width=device-width;">
+<style type="text/css">
+Table {
+	box-sizing: border-box;
+	width: 100%;
+	table-layout:fixed;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+th, td {
+	box-sizing: border-box;
+	padding: 10px;
+	background-clip: padding-box;
+	border: rgba(0,0,0,0) solid 1px;
+	word-break: break-all;
+}
+th {
+	background-color: #aaa;
+}
+td {
+	background-color: #e5e5e5;
+}
+
+@media only screen and (max-width:640px){
+	thead th{
+		display: none;
+	}
+	tbody tr{
+		display: block;
+		margin-top: 10px;
+		border-bottom: #fff solid 1px;
+		background: #eaeaea;
+	}
+	tbody td{
+		display: block;
+		margin-top: 2px;
+		padding: 0;
+		border: none;
+		background: none;
+		line-height: 140%;
+	}
+	tbody tr td:before {
+		display: inline-block;
+		width: 30%;
+		margin: 5px 10px 5px 5px;
+		padding: 5px;
+		background-color: #aaa;
+		font-weight: bold;
+	}
+	tbody tr td:nth-of-type(1):before {
+		content: "食材";
+	}
+	tbody tr td:nth-of-type(2):before {
+		content: "分量";
+	}
+	tbody tr td:nth-of-type(3):before {
+		content: "切り方";
+	}
+	tbody tr td:nth-of-type(4):before {
+		content: "加熱";
+	}
+	tbody tr td:nth-of-type(5):before {
+		content: "備考";
+	}
+}
+
+
+</style>
+</head>
+
+
+<div id="wrapper">
+
+
+<table>
+	<thead><tr>
+		<th>食材</th><th class="test">分量</th><th>切り方</th><th>加熱</th><th>備考</th>
+	</tr></thead>
+	<tbody>
+		<tr>
+			<td>トマト</td><td>10個</td><td>くし切り</td><td>生</td><td>完熟</td>
+		</tr>
+		<tr>
+			<td>にんじん</td><td>2本</td><td>千切り</td><td>油で炒める油で炒める油で炒める油で炒める油で炒める油で炒める油で炒める油で炒める油で炒める油で炒める油で炒める油で炒める油で炒める</td><td>中くらい</td>
+		</tr>
+		<tr>
+			<td>玉ねぎ</td><td>5個</td><td>みじん切り</td><td>飴色に<br>なるまで<br>炒める</td><td>新玉ねぎ</td>
+		</tr>
+	</tbody>
+</table>
+
+
+</div>
+<!-- end wrapper -->	
+
+
+
+</body>
+
+</html>
